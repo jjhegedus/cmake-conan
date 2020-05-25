@@ -56,7 +56,7 @@ function(_get_msvc_ide_version result)
     elseif(NOT MSVC_VERSION VERSION_LESS 1920 AND MSVC_VERSION VERSION_LESS 1930)
         set(${result} 16 PARENT_SCOPE)
     else()
-        message(FATAL_ERROR "Conan: Unknown MSVC compiler version [${MSVC_VERSION}]")
+        message(FATAL_ERROR "JJHTest: Conan: Unknown MSVC compiler version [${MSVC_VERSION}]")
     endif()
 endfunction()
 
